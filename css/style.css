@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap");
 
-#news,#service {
+#news {
   width: 100%;
   height: 45%;
 }
@@ -9,14 +9,10 @@
   background-color: #F6F1F1;
 }
 
-#service {
-  width: 100%;
-  height: 40%;
-}
 
 #blog{
   width:100%;
-  height:45%;
+  height:auto;
   background-color: #F6F1F1;
 }
 
@@ -109,7 +105,7 @@ ul {
 .heading {
   position: absolute;
   width: 100%;
-  height: 15%;
+  height: 100%;
   top: 10%;
   left: 10%;
   z-index: 1;
@@ -117,9 +113,10 @@ ul {
 
 .heading__eng {
   margin-bottom: 2%;
+  width:100%;
   color: #cc6699;
   font-weight: bold;
-  font-size: 35px;
+  font-size:3vw;
   line-height: 90px;
   font-family: "Hachi Maru Pop", cursive;
 }
@@ -127,7 +124,7 @@ ul {
 .heading__jpn {
   color:  #cc6699;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 2vw;
 }
 
 .emphasis-eng {
@@ -147,14 +144,14 @@ ul {
 
 .firstview {
   position: absolute;
-  right: 0%;
-  width: 65%;
-  height: 100%;
+  right: 0;
+  width: auto;
+  height: auto;
 }
 
 .main__img {
-  width: 100%;
-  height: 100%;
+  width: 650px;
+  height: 350px;
 }
 
 /* news */
@@ -252,9 +249,9 @@ ul {
 }
 
 /* service */
-.service__inner {
+.service {
   width: 100%;
-  height: 70%;
+  height: autos;
   margin: auto;
 }
 
@@ -269,8 +266,8 @@ ul {
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
   width:70%;
-  height:90%;
-  margin: 7% auto;
+  height:60%;
+  margin: 3% auto;
  }
 
 .service__main-ttl{
@@ -363,6 +360,7 @@ ul {
 
 .flex__item {
   display: flex;
+  position:relative;
   justify-content: space-between;
 }
 
@@ -436,7 +434,7 @@ ul {
 .blog__list-btn {
   display: block;
   width: 175px;
-  margin:30px auto;
+  margin:2% auto;
   padding: 20px 0;
   border-radius: 30px;
   border: 1px solid  #be1176;
@@ -444,6 +442,10 @@ ul {
   color: #be1176;
   text-align: center;
 } 
+
+.blog__list-btn-wrapper{
+  padding: 20px 0;
+}
 
 /* company */
 
@@ -487,6 +489,10 @@ table tr *:nth-child(1) {
   margin-top: 100px;
 }
 
+.flex-grow{
+  flex-grow:1;
+}
+
 .company__info--details {
   display: flex;
   width: 100%;
@@ -512,6 +518,7 @@ table tr *:nth-child(1) {
 
 .company__interview-img {
   position: relative;
+
 }
 .company__interview-ttl {
   position: absolute;
